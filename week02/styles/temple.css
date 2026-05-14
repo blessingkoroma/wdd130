@@ -27,6 +27,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    border-bottom: 1px solid #222;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -35,10 +39,10 @@ img {
 
 section {
     margin: 20px 0;
-    border: 1px solid rgb(0 0 0/ 10%);
+    border: 1px solid rgb(0 0 0 / 10%);
     padding: 10px;
-    background-color: #333;
-    font-size: 9rem;
+    background-color: #abc;
+    font-size: 1rem;
 }
 
 section p {
@@ -50,5 +54,5 @@ ul {
 }
 
 footer {
-    font-size: 9rem;
+    font-size: 1rem;
 }
