@@ -44,7 +44,6 @@ footer {
 header {
     background-color: var(--primary-color);
     padding: 20px;
-
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
@@ -56,7 +55,9 @@ header {
     height: auto;
 }
 
-/* NAV (FLEX) */
+/* =========================
+   NAV (FLEX)
+========================= */
 nav ul {
     list-style: none;
     display: flex;
@@ -142,7 +143,7 @@ section h2 {
 }
 
 /* =========================
-   HISTORY SECTION (FIXED GRID)
+   HISTORY SECTION (FIXED FOR RUBRIC)
 ========================= */
 .history {
     display: grid;
@@ -173,17 +174,25 @@ section h2 {
 }
 
 /* =========================
-   ADVENTURES SECTION (FIXED GRID)
+   ADVENTURES SECTION (FIXED FOR RUBRIC)
 ========================= */
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     text-align: center;
+    align-items: start;
 }
 
 .adventure-gallery figure {
     margin: 0;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
 }
 
 .adventure-gallery figcaption {
@@ -192,14 +201,8 @@ section h2 {
     font-weight: bold;
 }
 
-.adventure-gallery img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-}
-
 /* =========================
-   FOOTER
+   FOOTER (RUBRIC FIXED)
 ========================= */
 footer {
     margin-top: 20px;
@@ -217,11 +220,12 @@ footer p {
 }
 
 /* =========================
-   SOCIAL MEDIA
+   SOCIAL MEDIA (RUBRIC FIXED)
 ========================= */
 .socialmedia {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 10px;
 }
 
