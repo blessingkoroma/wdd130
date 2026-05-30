@@ -183,9 +183,7 @@ section h2 {
 }
 
 .adventure-gallery figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0;
 }
 
 .adventure-gallery figcaption {
