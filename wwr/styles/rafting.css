@@ -146,21 +146,30 @@ section h2 {
 ========================= */
 .history {
     display: grid;
-    grid-template-columns: 1fr 220px 1fr;
+    grid-template-columns: 1fr 250px 1fr;
     gap: 20px;
     align-items: start;
 }
 
-.history p {
+.history-left,
+.history-right {
     text-align: left;
     line-height: 1.6;
 }
 
-.history img {
+.history-center {
+    text-align: center;
+}
+
+.history-center h2 {
+    margin-bottom: 10px;
+}
+
+.history-center img {
     width: 100%;
     max-width: 220px;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
 }
 
 /* =========================
@@ -174,17 +183,21 @@ section h2 {
 }
 
 .adventure-gallery figure {
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 .adventure-gallery img {
     width: 100%;
-    height: 110px;
+    height: 120px;
     object-fit: cover;
-    display: block;
 }
 
 /* =========================
