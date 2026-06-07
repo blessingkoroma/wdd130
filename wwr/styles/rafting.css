@@ -234,12 +234,8 @@ footer p {
     height: auto;
 }
 
-/* =========================
-   CONTACT PAGE
-========================= */
-
-/* =========================
-   CONTACT INFO
+/* ========================= 
+CONTACT INFO 
 ========================= */
 .contact-info {
     text-align: center;
@@ -266,8 +262,6 @@ footer p {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     align-items: stretch;
-
-    /* IMPORTANT FIX */
     min-height: 520px;
     /* controls wireframe height */
 }
@@ -287,11 +281,9 @@ footer p {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-
     height: 100%;
-    /* fills the grid height */
     overflow: auto;
-    /* prevents overflow if content grows */
+
 }
 
 .contact-form h2 {
@@ -356,8 +348,7 @@ footer p {
 }
 
 /* =========================
-   MESSAGE FIELD (FIXED)
-   IMPORTANT: STACKED LAYOUT
+   MESSAGE FIELD 
 ========================= */
 .message-row {
     display: flex;
@@ -378,7 +369,6 @@ footer p {
     border-radius: 4px;
 
     height: 70px;
-    /* HARD FIX size */
     min-height: 70px;
     max-height: 70px;
 
