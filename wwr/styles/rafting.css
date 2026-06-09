@@ -34,7 +34,8 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -143,7 +144,7 @@ section h2 {
 }
 
 /* =========================
-   HISTORY SECTION (FIXED FOR RUBRIC)
+   HISTORY SECTION 
 ========================= */
 .history {
     display: grid;
@@ -202,7 +203,7 @@ section h2 {
 }
 
 /* =========================
-   FOOTER (RUBRIC FIXED)
+   FOOTER 
 ========================= */
 footer {
     margin-top: 20px;
@@ -220,7 +221,7 @@ footer p {
 }
 
 /* =========================
-   SOCIAL MEDIA (RUBRIC FIXED)
+   SOCIAL MEDIA 
 ========================= */
 .socialmedia {
     display: flex;
@@ -437,37 +438,4 @@ CONTACT INFO
     margin-top: 8px;
     font-weight: bold;
     color: var(--accent1-color);
-}
-
-/* =========================
-   FOOTER (RUBRIC FIXED)
-========================= */
-footer {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: var(--primary-color);
-    color: white;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* =========================
-   SOCIAL MEDIA (RUBRIC FIXED)
-========================= */
-.socialmedia {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-}
-
-.socialmedia img {
-    width: 40px;
-    height: auto;
 }
