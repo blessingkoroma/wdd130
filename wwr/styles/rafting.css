@@ -438,3 +438,228 @@ CONTACT INFO
     font-weight: bold;
     color: var(--accent1-color);
 }
+
+/* =========================
+   HOME PAGE HERO
+========================= */
+
+.home-hero {
+    position: relative;
+    margin-top: 20px;
+}
+
+.home-hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(5, 102, 141, 0.8);
+    padding: 15px;
+}
+
+/* CTA BUTTON ON IMAGE */
+.home-hero .cta {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-hero .cta a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.home-hero .cta a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter form {
+    display: grid;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* =========================
+   HOME GRID CONTENT
+========================= */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.home-card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.home-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.home-card p {
+    color: var(--accent1-color);
+    line-height: 1.5;
+}
+
+/* =========================
+   TRIPS PAGE CTA
+========================= */
+
+.trip-cta {
+    text-align: center;
+    background-color: white;
+}
+
+.trip-cta a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.trip-cta a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* =========================
+   TRIP CARDS
+========================= */
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.trip-card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.trip-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.trip-card p {
+    color: var(--accent1-color);
+    line-height: 1.5;
+}
+
+/* =========================
+   TRIPS TABLE
+========================= */
+
+.trip-table {
+    background-color: white;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .home-grid,
+    .trip-grid,
+    .contact-layout,
+    .employee-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    header,
+    main,
+    footer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .home-hero img {
+        height: 350px;
+    }
+}
