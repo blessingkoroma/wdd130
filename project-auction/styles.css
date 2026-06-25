@@ -106,3 +106,26 @@ input {
 .terms a {
     color: #333;
 }
+
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #f1f1f5;
+    border-radius: 15px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.input-box i {
+    color: #777;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.input-box input {
+    background: transparent;
+    border: none;
+    margin-bottom: 0;
+    outline: none;
+    width: 100%;
+}
